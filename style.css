@@ -305,3 +305,50 @@ button:hover {
     color: #333;
     border-top: 1rem solid rgba(0, 0, 0, .1);
 }
+
+/* Media Queries untuk Responsif pada Tampilan Ponsel */
+@media (max-width: 768px) {
+    header .fa-bars {
+        display: block;
+    }
+    
+    .isi, .calculator-section {
+        padding: 2rem 5%;
+    }
+
+    .calculator-section .content-wrapper {
+        flex-direction: column; /* Menyusun konten secara vertikal pada ponsel */
+        align-items: center;
+    }
+
+    .count-section, .calculator-container {
+        margin: 0;
+        width: 100%;
+        max-width: 100%; /* Pastikan tidak ada lebar maksimum yang mencegah responsif */
+    }
+
+    .count-section {
+        margin-bottom: 2rem; /* Memberikan jarak bawah pada count-section */
+    }
+
+    .calculator-container {
+        padding: 1rem;
+    }
+
+    .result-container {
+        margin-top: 1rem;
+    }
+
+    .bmi-advice-section {
+        margin-top: 2rem;
+    }
+
+    .footer .box-container {
+        flex-direction: column; /* Mengatur footer untuk stack box secara vertikal */
+    }
+
+    .footer .box-container .box {
+        flex: 1 1 auto; /* Flex item fleksibel untuk box footer */
+        width: 100%;
+    }
+}
